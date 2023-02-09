@@ -1,32 +1,56 @@
-table {
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  header a {
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  header img {
+    height: 40px;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .phone-case {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .phone-case img {
+    width: 100%;
+  }
+  
+  table {
     width: 100%;
     border-collapse: collapse;
-}
-
-th, td {
+  }
+  
+  table th,
+  table td {
     border: 1px solid black;
-    padding: 8px;
-}
-
-th {
+    padding: 10px;
+  }
+  
+  table th {
     background-color: lightgray;
-}
-
-h1 {
-    text-align: center;
-}
-
-h2 {
-    text-align: left;
-    margin-left: 10px;
-}
-
-p {
+  }
+  
+  form {
     text-align: right;
-    margin-right: 10px;
-}
-
-a {
-    text-decoration: none;
-    color: blue;
-}
+    margin-top: 20px;
+  }
+  

@@ -1,31 +1,39 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Phone Cases</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Phone Cases</title>
 </head>
 <body>
+  <header>
     <h1>Phone Cases</h1>
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Price</th>
-            <th>Action</th>
-        </tr>
-        <?php require_once 'list_phone_cases.php'; ?>
-    </table>
-    <h2>Shopping Cart</h2>
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Price</th>
-            <th>Action</th>
-        </tr>
-        <?php require_once 'list_cart_items.php'; ?>
-    </table>
-    <p>Total: <?php require_once 'get_cart_total.php'; ?></p>
-    <a href="?checkout=1">Checkout</a>
+    <a href="carro.php"><img src="shopping-cart.png" alt="Shopping Cart"></a>
+  </header>
+  <main>
+    <div class="phone-case">
+      <img src="phone-case-1.jpg" alt="Phone Case 1">
+      <h2>Phone Case 1</h2>
+      <form action="add.php" method="post">
+        <input type="hidden" name="id" value="1">
+        <input type="submit" value="Add to Cart">
+      </form>
+    </div>
+    <div class="phone-case">
+      <img src="phone-case-2.jpg" alt="Phone Case 2">
+      <h2>Phone Case 2</h2>
+      <form action="add.php" method="post">
+        <input type="hidden" name="id" value="2">
+        <input type="submit" value="Add to Cart">
+      </form>
+    </div>
+    <div class="phone-case">
+      <img src="phone-case-3.jpg" alt="Phone Case 3">
+      <h2>Phone Case 3</h2>
+      <form action="add.php" method="post">
+        <input type="hidden" name="id" value="3">
+        <input type="submit" value="Add to Cart">
+      </form>
+    </div>
+  </main>
 </body>
 </html>
